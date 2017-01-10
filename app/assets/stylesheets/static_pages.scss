@@ -14,6 +14,30 @@
 	.navbar-brand {
   color: yellow;
   font-family: "Bungee Shade", cursive;
+  font-size: 1.75em;
+  }
+  .navbar-brand:hover,
+  .navbar-brand:focus {
+  	
+  }
+  .navbar-nav {
+    >li >a {
+	  font-family:"Caveat", cursive;
+	  color: #4FE310;
+	  font-size: 2em;
+    }
+
+    >li>a:hover,
+    >li>a:focus {
+      color: #4FE310;
+    }
+    >.open {
+    	>a,
+      >a:hover,
+      >a:focus {
+      	color:yellow;
+      } 
+    }
   }
 }
 //
@@ -21,8 +45,9 @@
 	background-image: url(back_0.jpg);
 
 	h1 {
-		color:purple;
-		font-family:"Bungee Shade", cursive;
+		color: purple;
+		font-family: "Bungee Shade", cursive;
+		font-size: 4em;
 	}
 }
 
@@ -35,7 +60,8 @@ h3 {
 }
 
 footer {
-  position: absolute;
+  position: fixed;
+  bottom: 0;
 	clear: both;
 	color: yellow;
 }
@@ -51,4 +77,5 @@ footer {
 /*
 navbar-yellow:E6FB00;
 navborder-violet:DF0062;
+neon-green:4FE310;
 */
