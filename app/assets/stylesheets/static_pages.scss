@@ -2,32 +2,49 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-body {
-	background-image: url(back_0.jpg)
+
+#contact_back {
+	background-color: violet;
 }
-h1 {
+//////navbar
+.navbar-default {
+	background-color: #DF0062;
+	border-color: brown;
+
+	.navbar-brand {
+  color: yellow;
+  font-family: "Bungee Shade", cursive;
+  }
+}
+//
+#index_back {
+	background-image: url(back_0.jpg);
+
+	h1 {
+		color:purple;
+		font-family:"Bungee Shade", cursive;
+	}
+}
+
+
+h1,
+h3 {
   color:purple;
   text-align: center;
-}
-
-h2 {
-	color: purple;
-	text-align: center;
-}
-
-#overnav li{
-display: inline-block;
+  font-family: "Caveat", sans-serif;
 }
 
 footer {
   position: absolute;
-  top:45em;
+  bottom:0;
 	clear: both;
+	color: yellow;
 }
 
-#services {
-  width: 40%;
-  margin: 2em auto;
-	padding: 2em;
-	background-color: grey;
-}
+
+
+/*color-palette*/
+/*
+navbar-yellow:E6FB00;
+navborder-violet:DF0062;
+*/
