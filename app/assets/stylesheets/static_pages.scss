@@ -2,10 +2,28 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+html {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  position:relative;
+  margin: 0;
+  padding-bottom: 3em;
+  min-height: 100%;
+}
 
 #contact_back {
 	background-color: violet;
 }
+
 //////navbar
 .navbar-default {
 	background-color: #DF0062;
@@ -21,21 +39,39 @@
   	
   }
   .navbar-nav {
-    >li >a {
+  >li {
+    >a {
 	  font-family:"Caveat", cursive;
 	  color: #4FE310;
 	  font-size: 2em;
     }
 
-    >li>a:hover,
-    >li>a:focus {
+    >a:hover,
+    >a:focus {
       color: #4FE310;
     }
+    .dropdown-menu {
+      background-color: turquoise;
+      >li {
+        a {
+          font-family: "Caveat";
+          font-size:1.5em;
+        }
+        a:hover,
+        a:focus {
+          background-color:#DF0062;
+          color: yellow;
+          font-family:"Caveat";
+        }
+      }
+    }
+  }
     >.open {
     	>a,
       >a:hover,
       >a:focus {
       	color:yellow;
+        background-color: turquoise;
       } 
     }
   }
@@ -60,7 +96,9 @@ h3 {
 }
 
 footer {
-  position: fixed;
+  position: absolute;
+  right:0;
+  left:0;
   bottom: 0;
 	clear: both;
 	color: yellow;
@@ -70,9 +108,36 @@ footer {
   margin-top: 2em;
   margin-bottom: 2em;
 }
+// about
+#about_back {
+  background-image: url(index_2);
+  background-size: cover;
+}
 
+#about_back h1 {
+  margin-top:1em;
+  color: red;
+  font-family: "Bungee Shade", sans-serif;
+  font-size:4.5em;
+}
 
+.about_text {
+  width: 100%;
+  margin: 7em auto;
+  margin-bottom: 15em;
+  padding-top: 8em;
+  padding-bottom: 16em;
+  background-image: url(about_2);
+  background-size: cover;
+  backgroud-position: fixed;
 
+  p {
+    color: yellow;
+    text-shadow: 2px 2px black;
+    font-family: "Lemonada", sans-serif;
+    font-size:1.75em;
+  }
+}
 /*color-palette*/
 /*
 navbar-yellow:E6FB00;
