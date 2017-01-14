@@ -20,10 +20,6 @@ body {
   min-height: 100%;
 }
 
-#contact_back {
-	background-color: violet;
-}
-
 //////navbar
 .navbar-default {
 	background-color: #DF0062;
@@ -36,7 +32,7 @@ body {
   }
   .navbar-brand:hover,
   .navbar-brand:focus {
-  	
+  	color: yellow;
   }
   .navbar-nav {
   >li {
@@ -76,25 +72,96 @@ body {
     }
   }
 }
+
 //
+// index
 #index_back {
 	background-image: url(back_0.jpg);
 
 	h1 {
-		color: purple;
+		text-align: center;
 		font-family: "Bungee Shade", cursive;
 		font-size: 4em;
+		color: purple;
+	}
+
+	h3 {
+		text-align: center;
+		font-family: "Caveat", cursive;
+		font-size: 2em;
+		color: purple;
+	}
+
+}
+
+.grid_row2 {
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+//
+// about
+#about_back {
+  background-image: url(index_2);
+  background-size: cover;
+}
+
+#about_back h1 {
+  margin-top:1em;
+  color: black;
+  font-family: "Bungee Shade", sans-serif;
+  font-size:4.5em;
+  text-shadow: 2px 2px white;
+  text-align: center;
+}
+
+.about_text {
+  width: 50%;
+  margin: 7em auto;
+  margin-bottom: 16em;
+
+  p {
+    color: yellow;
+    font-family: "Lemonada", sans-serif;
+    font-size:1.75em;
+  }
+}
+
+//
+// contact
+#contact_back {
+	background-image: url(about_2.jpg);
+	background-size: cover;
+
+	h1 {
+		text-align: center;
+		font-family: "Caveat";
+		color: turquoise;
+		font-size: 3.5em;
+		text-shadow: 2px 2px black;
+	}
+
+	h3 {
+		text-align: center;
+		font-family: "Caveat";
+		font-size: 1.5em;
+		color: black;
+
+	}
+
+	.contact_info p{
+		border-radius: 5px;
+		margin-top: 1em;
+		padding: 1em;
+		font-family: "Lemonada";
+		background-color: silver;
 	}
 }
 
 
-h1,
-h3 {
-  color:purple;
-  text-align: center;
-  font-family: "Caveat", sans-serif;
-}
 
+//
+//footer
 footer {
   position: absolute;
   right:0;
@@ -104,40 +171,6 @@ footer {
 	color: yellow;
 }
 
-.grid_row2 {
-  margin-top: 2em;
-  margin-bottom: 2em;
-}
-// about
-#about_back {
-  background-image: url(index_2);
-  background-size: cover;
-}
-
-#about_back h1 {
-  margin-top:1em;
-  color: red;
-  font-family: "Bungee Shade", sans-serif;
-  font-size:4.5em;
-}
-
-.about_text {
-  width: 100%;
-  margin: 7em auto;
-  margin-bottom: 15em;
-  padding-top: 8em;
-  padding-bottom: 16em;
-  background-image: url(about_2);
-  background-size: cover;
-  backgroud-position: fixed;
-
-  p {
-    color: yellow;
-    text-shadow: 2px 2px black;
-    font-family: "Lemonada", sans-serif;
-    font-size:1.75em;
-  }
-}
 /*color-palette*/
 /*
 navbar-yellow:E6FB00;
