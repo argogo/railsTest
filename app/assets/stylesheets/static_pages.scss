@@ -22,24 +22,24 @@ body {
 
 //////navbar
 .navbar-default {
-	background-color: #DF0062;
-	border-color: brown;
+  background-color: #DF0062;
+  border-color: brown;
 
-	.navbar-brand {
+  .navbar-brand {
   color: yellow;
   font-family: "Bungee Shade", cursive;
   font-size: 1.75em;
   }
   .navbar-brand:hover,
   .navbar-brand:focus {
-  	color: yellow;
+    color: yellow;
   }
   .navbar-nav {
   >li {
     >a {
-	  font-family:"Caveat", cursive;
-	  color: #4FE310;
-	  font-size: 2em;
+      font-family:"Caveat", cursive;
+      color: #4FE310;
+      font-size: 2em;
     }
 
     >a:hover,
@@ -76,21 +76,21 @@ body {
 //
 // index
 #index_back {
-	background-image: url(back_0.jpg);
+  background-image: url(back_0.jpg);
 
-	h1 {
-		text-align: center;
-		font-family: "Bungee Shade", cursive;
-		font-size: 4em;
-		color: purple;
-	}
+  h1 {
+    text-align: center;
+    font-family: "Bungee Shade", cursive;
+    font-size: 4em;
+    color: purple;
+  }
 
-	h3 {
-		text-align: center;
-		font-family: "Caveat", cursive;
-		font-size: 2em;
-		color: purple;
-	}
+  h3 {
+    text-align: center;
+    font-family: "Caveat", cursive;
+    font-size: 2em;
+    color: purple;
+  }
 
 }
 
@@ -130,32 +130,31 @@ body {
 //
 // contact
 #contact_back {
-	background-image: url(about_2.jpg);
-	background-size: cover;
+  background-image: url(about_2.jpg);
+  background-size: cover;
 
-	h1 {
-		text-align: center;
-		font-family: "Caveat";
-		color: turquoise;
-		font-size: 3.5em;
-		text-shadow: 2px 2px black;
-	}
+  h1 {
+    text-align: center;
+    font-family: "Caveat";
+    color: turquoise;
+    font-size: 3.5em;
+    text-shadow: 2px 2px black;
+  }
 
-	h3 {
-		text-align: center;
-		font-family: "Caveat";
-		font-size: 1.5em;
-		color: black;
+  h3 {
+    text-align: center;
+    font-family: "Caveat";
+    font-size: 1.5em;
+    color: black;
+  }
 
-	}
-
-	.contact_info p{
-		border-radius: 5px;
-		margin-top: 1em;
-		padding: 1em;
-		font-family: "Lemonada";
-		background-color: silver;
-	}
+  .contact_info p{
+    border-radius: 5px;
+    margin-top: 1em;
+    padding: 1em;
+    font-family: "Lemonada";
+    background-color: silver;
+  }
 }
 
 
@@ -167,8 +166,8 @@ footer {
   right:0;
   left:0;
   bottom: 0;
-	clear: both;
-	color: yellow;
+  clear: both;
+  color: yellow;
 }
 
 /*color-palette*/
