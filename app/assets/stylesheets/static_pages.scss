@@ -2,6 +2,7 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+//page styles (for footer to rest at bottom of site)
 html {
   height: 100%;
   box-sizing: border-box;
@@ -20,53 +21,65 @@ body {
   min-height: 100%;
 }
 
-//////navbar
+// General Styles
+$hand-font: "Rock Salt", "Rockwell Extra Bold", "Rockwell Bold", monospace;
+$box-font: "Bungee Shade", "Lucida Sans Typewriter", "Lucida Console", monaco, monospace;
+$retro-font: "Caveat", "Andale Mono", AndaleMono, monospace; 
+$nav-purp:#DF0062;
+$nav-green:#4FE310;
+
+///navbar
 .navbar-default {
-  background-color: #DF0062;
+  background-color: $nav-purp;
   border-color: brown;
 
   .navbar-brand {
-  color: yellow;
-  font-family: "Bungee Shade", cursive;
-  font-size: 1.75em;
+    color: yellow;
+    font-family: $box-font;
+    font-size: 1.75em;
   }
+
   .navbar-brand:hover,
   .navbar-brand:focus {
     color: yellow;
   }
-  .navbar-nav {
-  >li {
-    >a {
-      font-family:"Caveat", cursive;
-      color: #4FE310;
-      font-size: 2em;
-    }
 
-    >a:hover,
-    >a:focus {
-      color: #4FE310;
-    }
-    .dropdown-menu {
-      background-color: turquoise;
-      >li {
-        a {
-          font-family: "Caveat";
-          font-size:1.5em;
-        }
-        a:hover,
-        a:focus {
-          background-color:#DF0062;
-          color: yellow;
-          font-family:"Caveat";
+  .navbar-nav {
+    >li {
+      >a {
+        font-family: $retro-font;
+        color: $nav-green;
+        font-size: 2em;
+      }
+
+      >a:hover,
+      >a:focus {
+      color: $nav-green;
+      }
+
+      .dropdown-menu {
+        background-color: turquoise;
+        >li {
+          a {
+            font-family: $retro-font;
+            font-size: 1.5em;
+          }
+
+          a:hover,
+          a:focus {
+            background-color: $nav-purp;
+            color: yellow;
+            font-family: $retro-font;
+          }
         }
       }
     }
-  }
+
     >.open {
     	>a,
       >a:hover,
       >a:focus {
-      	color:yellow;
+      	color: yellow;
         background-color: turquoise;
       } 
     }
@@ -75,21 +88,22 @@ body {
 
 //
 // index
+@mixin header-style($size, $font) {
+	text-align: center;
+	font-family: $font;
+	font-size: $size;
+	color: purple;
+}
+
 #index_back {
   background-image: url(back_0.jpg);
 
   h1 {
-    text-align: center;
-    font-family: "Bungee Shade", cursive;
-    font-size: 4em;
-    color: purple;
+    @include header-style(4em, $box-font)
   }
 
   h3 {
-    text-align: center;
-    font-family: "Caveat", cursive;
-    font-size: 2em;
-    color: purple;
+    @include header-style(2em, $retro-font)
   }
 
 }
@@ -107,23 +121,28 @@ body {
 }
 
 #about_back h1 {
-  margin-top:1em;
+	margin-top: .75em;
   color: black;
-  font-family: "Bungee Shade", sans-serif;
-  font-size:4.5em;
+  font-family: $box-font;
+  font-size: 2.5em;
   text-shadow: 2px 2px white;
   text-align: center;
 }
 
 .about_text {
-  width: 50%;
-  margin: 7em auto;
   margin-bottom: 16em;
+  
+  .frame-img { 
+  	margin-top: 1em;
+  }
 
   p {
+  	margin-top: 1.5em;
     color: yellow;
-    font-family: "Lemonada", sans-serif;
-    font-size:1.75em;
+    font-family: $hand-font;
+    font-size: 1.75em;
+    text-align: center;
+    text-shadow: 2px 2px black;
   }
 }
 
@@ -135,7 +154,7 @@ body {
 
   h1 {
     text-align: center;
-    font-family: "Caveat";
+    font-family: $retro-font;
     color: turquoise;
     font-size: 3.5em;
     text-shadow: 2px 2px black;
@@ -143,7 +162,7 @@ body {
 
   h3 {
     text-align: center;
-    font-family: "Caveat";
+    font-family: $retro-font;
     font-size: 1.5em;
     color: black;
   }
@@ -152,19 +171,19 @@ body {
     border-radius: 5px;
     margin-top: 1em;
     padding: 1em;
-    font-family: "Lemonada";
-    background-color: silver;
+    font-family: $hand-font;
+    color: black;
+    background-color: rgb(93, 109, 109);
+    background-color: rgba(93,109,109,.5);
   }
 }
-
-
 
 //
 //footer
 footer {
   position: absolute;
-  right:0;
-  left:0;
+  right: 0;
+  left: 0;
   bottom: 0;
   clear: both;
   color: yellow;
