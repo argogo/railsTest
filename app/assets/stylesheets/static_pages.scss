@@ -89,10 +89,10 @@ $nav-green:#4FE310;
 //
 // index
 @mixin header-style($size, $font) {
-	text-align: center;
-	font-family: $font;
-	font-size: $size;
-	color: purple;
+  text-align: center;
+  font-family: $font;
+  font-size: $size;
+  color: purple;
 }
 
 #index_back {
@@ -133,11 +133,11 @@ $nav-green:#4FE310;
   margin-bottom: 16em;
   
   .frame-img { 
-  	margin-top: 1em;
+    margin-top: 1em;
   }
 
   p {
-  	margin-top: 1.5em;
+    margin-top: 1.5em;
     color: yellow;
     font-family: $hand-font;
     font-size: 1.75em;
