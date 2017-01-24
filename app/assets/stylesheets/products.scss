@@ -1,3 +1,28 @@
 // Place all the styles related to the products controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+#products_back {
+	background-color: #FFFD62;
+}
+
+.products_header {
+	margin-top:-.75em;
+	padding:1em;
+	text-align: center;
+	font-size: 5em;
+	font-family: "Bungee Shade", sans-serif;
+	color: white;
+	background-image: url(products_0.jpg);
+	background-size: cover;
+}
+
+table {
+	width: 100%;
+	font-size: 1.75em;
+	font-family: "Caveat", sans-serif;
+  
+  th {
+  	text-align: center;
+  	padding: 1em;
+  }
+}
