@@ -1,6 +1,13 @@
 // Place all the styles related to the products controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+//gen styles
+$cav-font: Caveat, Helvetica, sans-serif;
+$bun-font: "Bungee Shade", sans-serif;
+$hel-font: Helvetica, sans-serif;
+$border-black: solid black;
+//
 #products_back {
 	background-color: #FFFD62;
 }
@@ -10,12 +17,51 @@
 	padding:1em;
 	text-align: center;
 	font-size: 5em;
-	font-family: "Bungee Shade", sans-serif;
+	font-family: $bun-font;
 	color: white;
 	background-image: url(products_0.jpg);
 	background-size: cover;
 }
 
+#show_back {
+	background-color: turquoise;
+}
+
+.product-container {
+	border: 5px $border-black;
+
+  .product-row {
+  	padding: 1em;
+
+  	.product-display {
+  		border: 3px $border-black;
+  		padding: .5em;
+  		text-align: center;
+  		font-family: $cav-font;
+      
+      .product-name {
+      	color: black;
+      }
+      p {
+      	font-family: $hel-font;
+      	font-size: 1.5em;
+      	color: black;
+      	margin: 1em;
+      }
+  		#product-price {
+  			font-family: $cav-font;
+  			font-size:3em;
+  			color: blue;
+  		}
+
+  	}
+
+  }
+
+}
+
+//oldstyles 
+/*
 table {
 	width: 100%;
 	font-size: 1.75em;
@@ -31,7 +77,4 @@ table {
   	font-size: .7em;
   }
 }
-
-#show_back {
-	background-color: turquoise;
-}
+*/
