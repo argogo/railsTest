@@ -9,22 +9,22 @@ $hel-font: Helvetica, sans-serif;
 $border-black: solid black;
 //
 #products_back {
-	background-color: #FFFD62;
+  background-color: #FFFD62;
 }
 
 .products_header {
-	margin-top:-.75em;
-	padding:1em;
-	text-align: center;
-	font-size: 5em;
-	font-family: $bun-font;
-	color: white;
-	background-image: url(products_0.jpg);
-	background-size: cover;
+  margin-top:-.75em;
+  padding: 1em;
+  text-align: center;
+  font-size: 5em;
+  font-family: $bun-font;
+  color: white;
+  background-image: url(products_0.jpg);
+  background-size: cover;
 }
 
 #show_back {
-	background-color: turquoise;
+  background-color: turquoise;
 }
 
 .product-container {
@@ -33,18 +33,18 @@ $border-black: solid black;
   .product-row {
     padding: 1em;
 
-  	.product-display {
-  		border: 3px $border-black;
-  		padding: .5em;
-  		text-align: center;
-  		font-family: $cav-font;
+    .product-display {
+      border: 3px $border-black;
+      padding: .5em;
+      text-align: center;
+      font-family: $cav-font;
       
-      .img-responsive {
-        display: inline-block;
-      }
+    .img-responsive {
+      display: inline-block;
+    }
 
       .product-name {
-      	color: black;
+        color: black;
       }
 
       p {
@@ -54,16 +54,13 @@ $border-black: solid black;
       	margin: 1em;
       }
       
-  		#product-price {
-  			font-family: $cav-font;
-  			font-size:3em;
-  			color: blue;
-  		}
-
-  	}
-
+      #product-price {
+        font-family: $cav-font;
+        font-size:3em;
+        color: blue;
+      }
+    }
   }
-
 }
 
 //oldstyles 
