@@ -39,15 +39,21 @@ $border-black: solid black;
   		text-align: center;
   		font-family: $cav-font;
       
+      .img-responsive {
+        display: inline-block;
+      }
+
       .product-name {
       	color: black;
       }
+
       p {
       	font-family: $hel-font;
       	font-size: 1.5em;
       	color: black;
       	margin: 1em;
       }
+      
   		#product-price {
   			font-family: $cav-font;
   			font-size:3em;

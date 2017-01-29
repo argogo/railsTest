@@ -7,5 +7,8 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 Product.create(:name => "seed-generated product", :description => "I also created this product without using the HTMl form!")
-
+Product.create(:name => "Jeans1", :description => "Seed generated blue jeans. Womens fit", :color => "Denim Blue", :image_url => "https://static.pexels.com/photos/42466/pexels-photo-42466.jpeg")
+Product.create(:name => "Jeans2", :description => "Seed generated blue jeans. Mens fit.", :color => "Denim Blue", :image_url => "https://upload.wikimedia.org/wikipedia/commons/d/d2/Jeans_for_men.jpg")
+Product.create(:name => "Shirt1", :description => "Seed generated D.A.R.E. shirt. Unisex fit.", :color => "White", :image_url => "https://upload.wikimedia.org/wikipedia/commons/3/38/DAREt-shirt_IGP4794.JPG")
+Product.create(:name => "Jacket1", :description => "Seed generated jacket. Unisex fit.", :color => "Grey", :image_url => "https://c1.staticflickr.com/9/8049/8098523438_e0d15cd826.jpg")
 
