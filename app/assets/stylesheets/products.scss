@@ -13,8 +13,8 @@ $border-black: solid black;
 }
 
 .products_header {
-	margin-top:-.75em;
-	padding:1em;
+	margin-top: -.75em;
+	padding: 1em;
 	text-align: center;
 	font-size: 5em;
 	font-family: $bun-font;
@@ -48,10 +48,10 @@ $border-black: solid black;
       }
 
       p {
+      	margin: 1em;
       	font-family: $hel-font;
       	font-size: 1.5em;
       	color: black;
-      	margin: 1em;
       }
       
   		#product-price {
