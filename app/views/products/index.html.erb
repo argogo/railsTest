@@ -8,9 +8,11 @@
 
 <div class="container-fluid product-container">
   <div class="row product-row">
+    <!--appends item to /products-->
     <% @products.each do |product| %>
       <div class="col-sm-6 col-md-4 product-display">
         <%= image_tag(product.image_url, class: "img-responsive", style:"height:385px; width:350px;") %>
+        <!-- image sizes kept uniform-->
         <h1 class="product-name"><strong><%= product.name %></strong></h1>
         <p><%= product.description %></p>
         <p>Color: <%= product.color %></p>

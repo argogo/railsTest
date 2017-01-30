@@ -34,9 +34,9 @@ $border-black: solid black;
   	padding: 1em;
 
   	.product-display {
+  		text-align: center;
   		border: 3px $border-black;
   		padding: .5em;
-  		text-align: center;
   		font-family: $cav-font;
       
       .img-responsive {
