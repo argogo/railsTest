@@ -63,8 +63,26 @@ $border-black: solid black;
   }
 }
 
-//oldstyles 
+
 /*
+ *  Product Show
+ */
+
+#show_back {
+  .product-show {
+    p {
+      margin-left:0;
+    }
+  }
+}
+#product-footer {
+  clear:both;
+}
+
+
+/*
+ *oldstyles 
+ *
 table {
   width: 100%;
   font-size: 1.75em;
@@ -80,4 +98,6 @@ table {
     font-size: .7em;
   }
 }
+*
+*
 */

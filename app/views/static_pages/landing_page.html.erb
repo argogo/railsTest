@@ -1,2 +1,19 @@
-<h2>Featured Product:</h2>
-<%= @featured_product.name %>
+<body id="landing">
+
+<div id="landing-head" class="container">
+  <h4>Featured Product:</h4>
+  <h1><%= @featured_product.name %></h1>
+</div>
+
+<div id="landing-product" class="container" >
+  <div id="landing-image">
+    <%= image_tag(@featured_product.image_url, :class =>'img-responsive', :id => 'landing-img') %>
+  </div>
+  <div  id="landing_links">
+      <button type="button" class="btn btn-success"><%=link_to('Go to Products', '/products')%></button>
+      <button type="button" class="btn btn-success"><%=link_to('View Item', '/products/2')%></button>
+      <p><%= @featured_product.description%></p>
+      <p><%= @featured_product.colour%></p>
+  </div>
+</div>
+</body>

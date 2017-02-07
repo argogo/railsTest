@@ -86,7 +86,61 @@ $nav-green:#4FE310;
   }
 }
 
-//
+// Landing Page
+
+#landing {
+  background-color: turquoise;
+
+  #landing-head {
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    text-align: center;
+
+    h4 {
+      font-family: $retro-font;
+    }
+    h1 {
+      font-family: $hand-font;
+    }
+  }
+
+  #landing-product {
+    margin-top:1.5em;
+    padding: .5em;
+    border-radius: 5px;
+    display: flex;
+    background-color: black;
+
+    #landing-image {
+      width: 50%;
+      height: 500px;
+      display:flex;
+      justify-content: flex-start;
+
+      #landing-img {
+        display: flex;
+        align-items: center;
+      }
+    }
+    #landing_links {
+      width: 50%;
+
+      .btn-success {
+        margin-left: 25%;
+        margin-bottom:.25em;
+        background-color:$nav-green;
+
+        width:50%;
+       
+        }
+      p {
+        color: white;
+      }
+    }
+  }
+}
+
 // index
 @mixin header-style($size, $font) {
   text-align: center;
