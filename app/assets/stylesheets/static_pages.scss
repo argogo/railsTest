@@ -173,51 +173,48 @@ $nav-green:#4FE310;
   h3 {
     @include header-style(2em, $retro-font)
   }
+  
+  .index-img {
+  }
 
+  .grid_row2 {
+    margin-top: 2em;
+    margin-bottom: 2em;
+  }
 }
 
-.grid_row2 {
-  margin-top: 2em;
-  margin-bottom: 2em;
-}
+
 
 //
 // about
 #about_back {
-  background-image: url(index_2);
+  background-image: url(about_01.jpg);
   background-size: cover;
-}
 
-#about_back h1 {
-	margin-top: .75em;
+  h1 {
+  margin-top: .75em;
   color: black;
-  font-family: $box-font;
+  font-family: $hand-font;
   font-size: 2.5em;
   text-shadow: 2px 2px white;
   text-align: center;
 }
+}
+
+#about_back 
 
 .about_text {
   margin-bottom: 16em;
   
-  .frame-img { 
-    margin-top: 1em;
-  }
-
-  p {
-    margin-top: 1.5em;
-    color: yellow;
-    font-family: $hand-font;
-    font-size: 1.75em;
-    text-align: center;
-    text-shadow: 2px 2px black;
+  h1 {
+  font-family: $hand-font;
   }
 }
 
 //
 // contact
 #contact_back {
-  background-image: url(about_2.jpg);
+  background-image: url(about_00.jpg);
   background-size: cover;
 
   h1 {
@@ -232,17 +229,20 @@ $nav-green:#4FE310;
     text-align: center;
     font-family: $retro-font;
     font-size: 1.5em;
-    color: black;
+    color: white;
   }
 
-  .contact_info p{
-    border-radius: 5px;
-    margin-top: 1em;
-    padding: 1em;
-    font-family: $hand-font;
-    color: black;
-    background-color: rgb(93, 109, 109);
-    background-color: rgba(93,109,109,.5);
+  .contact_info { 
+
+    p {
+      border-radius: 5px;
+      margin-top: 1em;
+      padding: 1em;
+      font-family: $hand-font;
+      color: white;
+      background-color: rgb(93, 109, 109);
+      background-color: rgba(93,109,109,.9);
+    }
   }
 }
 
@@ -254,7 +254,7 @@ footer {
   left: 0;
   bottom: 0;
   clear: both;
-  color: yellow;
+  color: white;
 }
 
 /*color-palette*/
