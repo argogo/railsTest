@@ -1,0 +1,13 @@
+<% @products.each do |product| %>
+  <div class="col-sm-6 col-md-4 product-display">
+    <%= image_tag(product.image_url, class: "img-responsive", style:"height:385px; width:350px;") %>
+    <!-- image sizes kept uniform-->
+    <h1 class="product-name"><strong><%= product.name %></strong></h1>
+    <p><%= product.description %></p>
+    <p>Colour: <%= product.colour %></p>
+    <strong id="product-price">$ 65 </strong>
+      <%= link_to 'Show', product %>
+      <%= link_to 'Edit', edit_product_path(product) %>
+      <%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %>
+  </div><!--/col-->
+<% end %>

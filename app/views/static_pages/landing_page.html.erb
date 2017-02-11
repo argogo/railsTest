@@ -1,19 +1,30 @@
 <body id="landing">
 
 <div id="landing-head" class="container">
-  <h4>Featured Product:</h4>
-  <h1><%= @featured_product.name %></h1>
+  <h4>Local Sites</h4>
+  <h1>Featured Product: </h1>
 </div>
+<div id="container">
+<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <%= render(:partial => "forms") %>
+  </ol>
 
-<div id="landing-product" class="container" >
-  <div id="landing-image">
-    <%= image_tag(@featured_product.image_url, :class =>'img-responsive', :id => 'landing-img') %>
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+   <%= render(:partial => "landing_page", :locals => {:product => @products}) %>
   </div>
-  <div  id="landing_links">
-      <button type="button" class="btn btn-success"><%=link_to('Go to Products', '/products')%></button>
-      <button type="button" class="btn btn-success"><%=link_to('View Item', '/products/2')%></button>
-      <p><%= @featured_product.description%></p>
-      <p><%= @featured_product.colour%></p>
-  </div>
+
+  <!-- Controls -->
+  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
 </div>
 </body>

@@ -1,0 +1,18 @@
+<% @products.each do |product| %>
+    <div class="item <%= " active" if product == @products.first%>">
+      <div class="container landing-product" >
+        <div class="landing-image">
+          <%= image_tag(product.image_url, :class => 'img-responsive landing-img') %>
+        </div>
+        <div class="landing_links">
+          <!--create breakpoint for mobile layout iss:squished img-->
+          <button type="button" class="btn btn-success"><%=link_to('Go to Products', '/products')%></button>
+          <button type="button" class="btn btn-success"><%=link_to('View Item', '/products/2')%></button>
+          <button type="button" class="btn btn-success"><%=link_to('Go to Home', '/static_pages/')%></button>
+          <p><%= product.name %></p>
+          <p><%= product.description%></p>
+          <p><%= product.colour%></p>
+        </div>
+      </div>
+    </div>
+    <% end %>
