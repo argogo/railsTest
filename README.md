@@ -1,7 +1,13 @@
-Test application determine whether conf is correct
+Hello!
 
-New Rails app tests wether configurations on machine that point to repositories are correct and functional
+This is a rails eCommerce app created using the Ruby on Rails framework.
 
-railsTest uses the following
- -Ruby 2.3.1
- -Rails 5.0.1
+Project railsTest uses the following:
+
+Rails 5.0.1
+Ruby 2.2.2
+Twitter Bootstrap 3.3.5
+SQLite3 (Development)
+PostgreSQL 9.6.1 (Heroku Production)
+
+
