@@ -5,7 +5,6 @@ class ProductsController < ApplicationController
   # GET /products.json
   def index
     @products = Product.all
-    @products_first = Product.first(5)
   end
 
   # GET /products/1
