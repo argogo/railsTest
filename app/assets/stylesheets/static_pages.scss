@@ -27,6 +27,7 @@ $box-font: "Bungee Shade", "Lucida Sans Typewriter", "Lucida Console", monaco, m
 $retro-font: "Caveat", "Andale Mono", AndaleMono, monospace; 
 $nav-purp:#DF0062;
 $nav-green:#4FE310;
+$round-corner: 5px;
 
 ///navbar
 .navbar-default {
@@ -45,6 +46,24 @@ $nav-green:#4FE310;
   }
 
   .navbar-nav {
+    width: 74%;
+    
+    //accesses right-most element (search form)
+    li:last-child { 
+      float: right;
+      
+      label {
+        color: black;
+      }
+
+      input {
+        color: black;
+        border-radius: $round-corner;
+
+        .btn-default { padding: .25em; }
+
+      }
+    }
     >li {
       >a {
         font-family: $retro-font;
@@ -94,7 +113,7 @@ $nav-green:#4FE310;
   #landing-head {
     background-color: black;
     color: white;
-    border-radius: 5px;
+    border-radius: $round-corner;
     text-align: center;
 
     h4 {
@@ -121,7 +140,7 @@ $nav-green:#4FE310;
   .landing-product {
     margin-top:1.5em;
     padding: .5em;
-    border-radius: 5px;
+    border-radius: $round-corner;
     display: flex;
     background-color: black;
 
@@ -192,7 +211,7 @@ $nav-green:#4FE310;
   left: 50%;
   top: 2em;
   margin: 0;
-  border-radius: 5px;
+  border-radius: $round-corner;
   color: white;
   font-size:2em;
 
@@ -248,7 +267,7 @@ $nav-green:#4FE310;
   .contact_info { 
 
     p {
-      border-radius: 5px;
+      border-radius: $round-corner;
       margin-top: 1em;
       padding: 1em;
       font-family: $hand-font;
