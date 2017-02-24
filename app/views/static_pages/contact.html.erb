@@ -1,10 +1,36 @@
 <body id="contact_back">
   <h1><strong><em>Talk to Me</em></strong></h1>
   <h3><em>If you'd like to contact me for a chat or more information on my services, feel free!</em></h3>
-  <div class="container contact_info">
-    <p><span class="glyphicon glyphicon-comment"></span> Email: anezi404@gmail.com</p>
-    <p><span class="glyphicon glyphicon-earphone"></span> Phone: (222)222-2222</p>
-    <p><span class="glyphicon glyphicon-home"></span> Location: 240 Riverdale Drive</p>
+
+
+  <%= flash[:notice] %>
+
+  <%= form_tag("/static_pages/thank_you") do %>
+  <div id="contact-form-container">
+    <div class="row">
+      <div class="container contact_info col-md-8">
+        <p><span class="glyphicon glyphicon-comment"></span> Email: anezi404@gmail.com</p>
+        <p><span class="glyphicon glyphicon-earphone"></span> Phone: (222)222-2222</p>
+        <p><span class="glyphicon glyphicon-home"></span> Location: 240 Riverdale Drive</p>
+      </div>
+      <div class="col-md-4 inner-contact-form">
+        <div class="form-group">
+          <%= label_tag :name %>
+          <%= text_field_tag :name, nil, class: "form-control", placeholder: "Enter Name" %>
+        </div><!-- /form-group1 -->
+        <div class="form-group">
+          <%= label_tag :email, "Email Address" %>
+          <%= text_field_tag :email, nil, class: "form-control", placeholder: "Enter Email" %>
+        </div><!-- form-group2 -->
+        <div>
+          <%= label_tag :message %>
+          <%= text_area_tag :message, nil, class: "form-control", placeholder: "Enter Message" %>
+        </div><!-- form-group3 -->
+        <%= submit_tag "Send" %>
+      </div><!-- /col-md-4 -->
+    </div><!-- /row-->
+    
   </div>
+  <% end %>
 </body>
 
