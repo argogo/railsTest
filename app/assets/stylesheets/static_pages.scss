@@ -51,6 +51,7 @@ $round-corner: 5px;
     //accesses right-most element (search form)
     li:last-child { 
       float: right;
+      display: inline-block
       
       label {
         color: black;
