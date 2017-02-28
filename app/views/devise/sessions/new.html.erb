@@ -1,7 +1,7 @@
 <body class="user-login-form">
 
 
-<%= form_for(resource, as: resource_name, url: session_path(resource_name), :class => "form-signin") do |f| %>
+<%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
   <h2 class="form-signin-heading">Log in</h2>
   <div class="field">
     <%= f.email_field :email, autofocus: true, :class => "form-control", :type => "", :placeholder => "E-mail" %>
