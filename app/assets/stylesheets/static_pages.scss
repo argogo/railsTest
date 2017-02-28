@@ -50,19 +50,22 @@ $round-corner: 5px;
     
     //accesses right-most element (search form)
     li:last-child { 
-      float: right;
-      display: inline-block
-      
-      label {
-        color: black;
+    
+      .nav-search-form-container {
+        width: 33%;
+        .nav-search-form { width: 100%; }
       }
+
+      label { color: black; }
 
       input {
         color: black;
         border-radius: $round-corner;
+        display: block;
 
-        .btn-default { padding: .25em; }
-
+        .btn-default { 
+          padding: .25em; 
+        }
       }
     }
     >li {
