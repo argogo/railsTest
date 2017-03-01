@@ -46,13 +46,13 @@ $round-corner: 5px;
   }
 
   .navbar-nav {
-    width: 74%;
+    display:inline-block;
     
-    //accesses right-most element (search form)
     li:last-child { 
     
       .nav-search-form-container {
-        width: 33%;
+        float:right;
+        
         .nav-search-form { width: 100%; }
       }
 
@@ -61,7 +61,7 @@ $round-corner: 5px;
       input {
         color: black;
         border-radius: $round-corner;
-        display: block;
+        
 
         .btn-default { 
           padding: .25em; 
@@ -70,6 +70,7 @@ $round-corner: 5px;
     }
     >li {
       >a {
+        display:inline-block;
         font-family: $retro-font;
         color: $nav-green;
         font-size: 2em;
@@ -107,6 +108,22 @@ $round-corner: 5px;
       } 
     }
   }
+
+  #login-register-links {
+    float: right;
+    margin-right: 15px;
+    text-align: center;
+      ul { 
+        margin: 0; 
+        list-style: none;
+        
+        a {
+          color: white;
+          text-align:center;
+          font-size: 1em;
+        }
+      }
+    }
 }
 
 // Landing Page
