@@ -37,6 +37,8 @@ gem 'jbuilder', '~> 2.5'
 
 gem 'devise'
 # User login and authentication
+gem 'cancancan', '~> 1.10'
+# User authorization 
 
 group :production do
   gem 'pg'
