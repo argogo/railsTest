@@ -66,13 +66,12 @@
       </div><!--end container-fluid-->
       <div id="login-register-links"><!-- start user login/logout-->
        <ul>
-          <% if user_signed_in? %>
           <li>
+          <%= link_to('Users', '/users#show') + " //"%>
+          <% if user_signed_in? %>
             <%= link_to('Edit Account', edit_user_registration_path) + " //"%>
             <%= link_to('Logout', destroy_user_session_path, :method => :delete) %>
-          </li>
           <% else %>
-          <li>
             <%= link_to('Login', new_user_session_path) +" //"%>
             <%= link_to('Register', new_user_registration_path ) %>
           </li>
@@ -80,10 +79,12 @@
         </ul>
       </div><!-- end user login/logout-->
     </nav><!--end navbar navbar-default-->
-
-    <p><%= notice %></p>
-    <p><%= alert %></p>
-
+    <% if notice %>
+      <div class="alert alert-danger" role="alert"><p id="notice"><%= notice %></p></div>
+    <% end %>
+    <% if alert %>
+      <div class="alert alert-warning" role="alert"><p><%= alert %></p></div>
+    <% end %>
     <%= yield %>
 
     <footer>
