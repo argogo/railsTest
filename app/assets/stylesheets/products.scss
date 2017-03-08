@@ -6,6 +6,7 @@
 $cav-font: Caveat, Helvetica, sans-serif;
 $bun-font: "Bungee Shade", sans-serif;
 $hel-font: Helvetica, sans-serif;
+$dos-font: "Dosis", Helvetica, sans-serif;
 $border-black: solid black;
 //
 #products_back {
@@ -74,10 +75,33 @@ $border-black: solid black;
       margin-left:0;
     }
   }
-}
-#product-footer {
+
+  #product-footer {
   clear:both;
+  }
+
+  h3,
+  h2 { 
+      font-family: $cav-font;
+      font-size: 3em;
+  }
+
+  #product-show-info { 
+    p {
+      font-family: $hel-font;
+      font-size: 1.5em;
+    }
+  }
+
+  .thumbnail { background-color: grey; }
+  .caption { margin: auto 5%; }
+  .button_to { display: inline-block; }
+  .glyphicon {transition:500ms;}
+  .glyphicon-plus:hover{ color: green; }
+  .glyphicon-minus:hover{ color: red; }
+  
 }
+
 
 /*
  * Product Edit
