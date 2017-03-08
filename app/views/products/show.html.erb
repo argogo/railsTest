@@ -20,6 +20,14 @@
         </p>
       </div>
     </div><!--/row-->
+    <div class="row product-reviews">
+      <div class="review-highest">
+        <%= @product.comments.rating_desc.first %>
+      </div>
+      <div class="review-lowest">
+        <%= @product.comments.rating_desc.last %>
+      </div>
+    </div><!-- /product-reviews
   </div><!--/container-->
   <div class= "container" id="product-footer">
     <%= link_to 'Edit', edit_product_path(@product) %>
