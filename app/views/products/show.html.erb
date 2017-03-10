@@ -35,6 +35,7 @@
       <div class="product-review-cont col-xs-12">
         <h2><strong>Reviews</strong></h2>
         <hr>
+        <%= render partial: 'new_comment' %>
         <h4><span class="glyphicon glyphicon-plus"></span><strong>Most Positive</strong></h4>
         <div class="review-highest">
           <%= @product.highest_rating_comment %>
@@ -44,6 +45,7 @@
           <%= @product.lowest_rating_comment %>
         </div>
         <hr>
+          <%= render partial: 'comments' %>
       </div><!-- /product-reviews -->
     </div><!-- /container -->
 

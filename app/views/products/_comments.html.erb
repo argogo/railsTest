@@ -1,0 +1,16 @@
+<div class="product-reviews-reviews container">
+  <% @comments.each do |comment| %>
+    <div class="row">
+      <p>
+        <%= comment.user.first_name %>
+          <small><em><%= "#{time_ago_in_words(comment.created_at)} ago" %></em></small>
+      </p>
+      <p>
+        <%= "Rating: #{comment.rating}/5" %>
+      </p>
+      <p>
+        <%= comment.body %>
+      </p>
+    </div>
+  <% end %>
+</div>

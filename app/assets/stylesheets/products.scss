@@ -8,6 +8,7 @@ $bun-font: "Bungee Shade", sans-serif;
 $hel-font: Helvetica, sans-serif;
 $dos-font: "Dosis", Helvetica, sans-serif;
 $border-black: solid black;
+$round-corner: 5px;
 //
 #products_back {
   background-color: #FFFD62;
@@ -91,6 +92,12 @@ $border-black: solid black;
       font-family: $hel-font;
       font-size: 1.5em;
     }
+  }
+
+  .user-review-form { 
+    background-color: white;
+    padding: 1em; 
+    border-radius: $round-corner;
   }
 
   .thumbnail { background-color: grey; }
