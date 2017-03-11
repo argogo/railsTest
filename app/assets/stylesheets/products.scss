@@ -95,7 +95,9 @@ $round-corner: 5px;
   }
 
   .user-review-form { 
-    background-color: white;
+    background-image: url('show_ocean.jpg');
+    background-attachment: fixed;
+
     padding: 1em; 
     border-radius: $round-corner;
   }
