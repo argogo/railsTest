@@ -39,6 +39,8 @@ gem 'devise'
 # User login and authentication
 gem 'cancancan', '~> 1.10'
 # User authorization 
+gem 'will_paginate', '~> 3.1.1'
+# Comments pagination
 
 group :production do
   gem 'pg'
