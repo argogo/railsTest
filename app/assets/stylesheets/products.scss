@@ -3,15 +3,18 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 //gen styles
-$cav-font: Caveat, Helvetica, sans-serif;
-$bun-font: "Bungee Shade", sans-serif;
+$hand-font: "Rock Salt", "Rockwell Extra Bold", "Rockwell Bold", monospace;
+$box-font: "Permanent Marker", "Lucida Sans Typewriter", "Lucida Console", monaco, monospace;
+$retro-font: "Karla", "Andale Mono", AndaleMono, monospace;
 $hel-font: Helvetica, sans-serif;
 $dos-font: "Dosis", Helvetica, sans-serif;
 $border-black: solid black;
 $round-corner: 5px;
+$font-shadow-black: 2px 2px black;
+$font-shadow-white: 2px 2px white;
 //
 #products_back {
-  background-color: #FFFD62;
+  background-color: silver;
 }
 
 .products_header {
@@ -19,8 +22,9 @@ $round-corner: 5px;
   padding: 1em;
   text-align: center;
   font-size: 5em;
-  font-family: $bun-font;
+  font-family: $hand-font;
   color: white;
+  text-shadow: $font-shadow-black;
   background-image: url(products_0.jpg);
   background-size: cover;
 }
@@ -30,16 +34,16 @@ $round-corner: 5px;
 }
 
 .product-container {
-  border: 5px $border-black;
+
 
   .product-row {
-    padding: 1em;
+    padding: .5em;
 
     .product-display {
-      border: 3px $border-black;
+      margin-bottom: 2em;
       padding: .5em;
       text-align: center;
-      font-family: $cav-font;
+      font-family: $hel-font;
       
     .img-responsive {
       display: inline-block;
@@ -48,16 +52,20 @@ $round-corner: 5px;
       .product-name {
         color: black;
       }
+      
+      h1 {
+      font-family: $retro-font;
+      }
 
       p {
-        font-family: $hel-font;
+        font-family: $retro-font;
         font-size: 1.5em;
         color: black;
         margin: 1em;
       }
       
       #product-price {
-        font-family: $cav-font;
+        font-family: $hel-font;
         font-size:3em;
         color: blue;
       }
@@ -87,7 +95,7 @@ $round-corner: 5px;
 
   h3,
   h2 { 
-      font-family: $cav-font;
+      font-family: $hel-font;
       font-size: 3em;
   }
 

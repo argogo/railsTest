@@ -23,30 +23,34 @@ body {
 
 // General Styles
 $hand-font: "Rock Salt", "Rockwell Extra Bold", "Rockwell Bold", monospace;
-$box-font: "Bungee Shade", "Lucida Sans Typewriter", "Lucida Console", monaco, monospace;
-$retro-font: "Caveat", "Andale Mono", AndaleMono, monospace; 
-$nav-purp:#DF0062;
-$nav-green:#4FE310;
+$box-font: "Permanent Marker", "Lucida Sans Typewriter", "Lucida Console", monaco, monospace;
+$retro-font: "Karla", "Andale Mono", AndaleMono, monospace; 
+$nav-background: black;
+$nav-links: silver;
+$landing-background: black;
 $round-corner: 5px;
+$font-shadow-black: 2px 2px black;
+$font-shadow-white: 2px 2px white;
 
 ///navbar
 .navbar-default {
-  background-color: $nav-purp;
-  border-color: brown;
+  background-color: $nav-background;
+  border-color: black;
 
   .navbar-brand {
-    color: yellow;
+    color: silver;
     font-family: $box-font;
     font-size: 1.75em;
   }
 
   .navbar-brand:hover,
   .navbar-brand:focus {
-    color: yellow;
+    color: brown;
   }
 
   .navbar-nav {
-    display:inline-block;
+    display: inline-block;
+
     
     li:last-child { 
     
@@ -72,17 +76,23 @@ $round-corner: 5px;
       >a {
         display:inline-block;
         font-family: $retro-font;
-        color: $nav-green;
-        font-size: 2em;
+        color: $nav-links;
+        font-size: 1.75em;
+
+        span {
+          font-size:.5em;
+        }
+
       }
+
 
       >a:hover,
       >a:focus {
-      color: $nav-green;
+      color: $nav-links;
       }
 
       .dropdown-menu {
-        background-color: turquoise;
+        background-color: silver;
         >li {
           a {
             font-family: $retro-font;
@@ -91,8 +101,8 @@ $round-corner: 5px;
 
           a:hover,
           a:focus {
-            background-color: $nav-purp;
-            color: yellow;
+            background-color: $nav-background;
+            color: white;
             font-family: $retro-font;
           }
         }
@@ -103,16 +113,18 @@ $round-corner: 5px;
     	>a,
       >a:hover,
       >a:focus {
-      	color: yellow;
-        background-color: turquoise;
+      	color: black;
+        background-color: silver;
       } 
     }
   }
 
   #login-register-links {
     float: right;
+    margin-top: 2%;
     margin-right: 15px;
     text-align: center;
+
       ul { 
         margin: 0; 
         list-style: none;
@@ -121,6 +133,7 @@ $round-corner: 5px;
           color: white;
           text-align:center;
           font-size: 1em;
+          font-family: $retro-font;
         }
       }
     }
@@ -129,7 +142,8 @@ $round-corner: 5px;
 // Landing Page
 
 #landing {
-  background-color: turquoise;
+  background-image: url('about_01.jpg');
+  background-size: contain;
 
   #landing-head {
     background-color: black;
@@ -147,13 +161,27 @@ $round-corner: 5px;
   #carousel-example-generic {
     height: 700px;
     width: 100%;
+  
+    .carousel-control {
+      margin-top: 1.25em;
+      height: 500px;
+      background-color: transparent;
+    }
 
+    .carousel-inner {
+
+      .landing-product {
+        h1 {
+        text-align: center;
+        font-family: $hand-font;
+        color: white
+
+        }
+      }  
+    }
   }
 
-  .carousel-control {
-    margin-top: 1.25em;
-    height: 500px;
-  }
+
 
   .carousel-indicators {
     bottom: 11em;
@@ -182,12 +210,13 @@ $round-corner: 5px;
       .btn-success {
         margin-left: 25%;
         margin-bottom:.25em;
-        background-color:$nav-green;
-
+        background-color:$landing-background;
+        border-color:$nav-links;
         width:50%;
        
         }
       p {
+        font-family: $retro-font;
         color: white;
         font-size: 1.5em;
       }
@@ -200,21 +229,23 @@ $round-corner: 5px;
   text-align: center;
   font-family: $font;
   font-size: $size;
-  color: purple;
+  color: silver;
 }
 
 #index_back {
-  background-image: url(back_0.jpg);
+  background-image: url(back_0_mask.jpg);
 
   h1 {
-    @include header-style(4em, $box-font)
+    @include header-style(4em, $box-font);
+    text-shadow: 2px 2px black;
   }
 
   h3 {
-    @include header-style(2em, $retro-font)
+    @include header-style(2em, $retro-font);
   }
   
   .index-img {
+    box-shadow: 10px 10px 5px grey;
   }
 
   .grid_row2 {
@@ -239,7 +270,7 @@ $round-corner: 5px;
   color: black;
   font-family: $hand-font;
   font-size: 2.5em;
-  text-shadow: 2px 2px white;
+  text-shadow: $font-shadow-white;
   text-align: center;
 }
 }

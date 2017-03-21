@@ -9,9 +9,9 @@
           <button type="button" class="btn btn-success"><%=link_to('Go to Products', '/products')%></button>
           <button type="button" class="btn btn-success"><%=link_to('View Item', '/products/2')%></button>
           <button type="button" class="btn btn-success"><%=link_to('Go to Home', '/static_pages/index')%></button>
-          <p><%= product.name %></p>
+          <h1><%= product.name %></h1>
           <p><%= product.description%></p>
-          <p><%= product.colour%></p>
+          <p>Color: <%= product.colour%></p>
         </div>
       </div>
     </div>
