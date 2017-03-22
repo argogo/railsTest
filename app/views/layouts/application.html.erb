@@ -47,23 +47,22 @@
               <a href="/products/">Products<span class="sr-only"></span></a>
             </li>
             <li class="More">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">More <span class="glyphicon glyphicon-barcode"></span></a>
-                <ul class="dropdown-menu">
-                  <li><%=link_to('About', static_pages_about_path) %></li>
-                  <li><%=link_to('Contact', static_pages_contact_path) %></li>
-                  <li><%=link_to('Landing Page', static_pages_landing_page_path) %></li>
-                </ul>
-                <li  class="nav-search-form-container">
-                  <div class="nav-search-form">
-                    <%= form_tag("/products", method: "get", class: "navbar-form ") do %>
-                    <%= text_field_tag(:q, nil, class: "form-control", :placeholder => "Search") %>
-                    <%= submit_tag("Go", class: "btn btn-success search-button-color") %>
-                    <% end %>
-                  </div>
-                </li>
-            
-          </ul><!-- end of navbar link list-->
-
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">More <span class="glyphicon glyphicon-barcode"></span></a>
+              <ul class="dropdown-menu">
+                <li><%=link_to('About', static_pages_about_path) %></li>
+                <li><%=link_to('Contact', static_pages_contact_path) %></li>
+                <li><%=link_to('Landing Page', static_pages_landing_page_path) %></li>
+              </ul>
+              <li  class="nav-search-form-container">
+                <div class="nav-search-form">
+                  <%= form_tag("/products", method: "get", class: "navbar-form ") do %>
+                  <%= text_field_tag(:q, nil, class: "form-control", :placeholder => "Search") %>
+                  <%= submit_tag("Go", class: "btn btn-success search-button-color") %>
+                  <% end %>
+                </div>
+              </li>
+            </li>
+          </ul><!-- end of navbar link list--></li
         </div><!--end collapse navbar-collapse-->
       </div><!--end container-fluid-->
       <div id="login-register-links"><!-- start user login/logout-->

@@ -19,8 +19,10 @@ class ProductsController < ApplicationController
   # GET /products/1.json
 
   def show
+ 
     @comments = @product.comments.order("created_at DESC")
     @comments = @comments.paginate(:page => params[:page], :per_page => 3)
+
   end
 
   # GET /products/new
@@ -60,17 +62,18 @@ class ProductsController < ApplicationController
         format.json { render json: @product.errors, status: :unprocessable_entity }
       end
     end
+    authorize! :update, @product
   end
 
   # DELETE /products/1
   # DELETE /products/1.json
   def destroy
-    authorize! :destroy, @product
     @product.destroy
     respond_to do |format|
       format.html { redirect_to products_url, notice: 'Product was successfully destroyed.' }
       format.json { head :no_content }
     end
+    authorize! :destroy, @product
   end
 
   private

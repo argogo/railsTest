@@ -6,9 +6,9 @@
         </div>
         <div class="landing_links">
           <!--create breakpoint for mobile layout iss:squished img-->
-          <button type="button" class="btn btn-success"><%=link_to('Go to Products', '/products')%></button>
-          <button type="button" class="btn btn-success"><%=link_to('View Item', '/products/2')%></button>
-          <button type="button" class="btn btn-success"><%=link_to('Go to Home', '/static_pages/index')%></button>
+          <button type="button" class="btn btn-success"><%=link_to('Go to Products', products_path)%></button>
+          <button type="button" class="btn btn-success"><%=link_to('View Items', products_path)%></button>
+          <button type="button" class="btn btn-success"><%=link_to('Go to Home', static_pages_index_path)%></button>
           <h1><%= product.name %></h1>
           <p><%= product.description%></p>
           <p>Color: <%= product.colour%></p>
