@@ -29,7 +29,7 @@ $font-shadow-white: 2px 2px white;
 }
 
 #show_back {
-  background-color: turquoise;
+  background-color: #F1B0B0;
 }
 
 .product-container {
@@ -80,6 +80,7 @@ $font-shadow-white: 2px 2px white;
 #show_back {
   .product-show {
     p {
+      font-family: $retro-font;
       margin-left:0;
     }
   }
@@ -94,13 +95,13 @@ $font-shadow-white: 2px 2px white;
 
   h3,
   h2 { 
-      font-family: $hel-font;
+      font-family: $retro-font;
       font-size: 3em;
   }
 
   #product-show-info { 
     p {
-      font-family: $hel-font;
+      font-family: $retro-font;
       font-size: 1.5em;
     }
   }
@@ -112,7 +113,16 @@ $font-shadow-white: 2px 2px white;
     padding: 1em; 
     border-radius: $round-corner;
   }
+  
+  .product-reviews-reviews {
+    .reviews-username {
+      font-size: 1.5em;
+    }
+    .reviews-body {
+      font-size: 1.25em;
+    }
 
+  }
   .thumbnail { background-color: grey; }
   .caption { margin: auto 5%; }
   .button_to { display: inline-block; }
@@ -120,17 +130,15 @@ $font-shadow-white: 2px 2px white;
   .glyphicon-plus:hover{ color: green; }
   .glyphicon-minus:hover{ color: red; }
   
+  
 }
-
 
 /*
  * Product Edit
  */
 
 #edit-back { margin-left: 10%; 
-  
   .form-control { width: 50%; }
-
 }
 
 
