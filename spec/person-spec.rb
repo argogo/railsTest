@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 describe Person do
-  context "first and last3 name present" do
+  context "first and last name present" do
     let(:person) { Person.new(first_name: "John", last_name:"Smith") }
 
     it "should return first and last" do
