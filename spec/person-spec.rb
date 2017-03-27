@@ -12,7 +12,7 @@ describe Person do
   context "first name missing" do
     let(:person) { Person.new(last_name: "Smith") }
     
-    it should "return last name only" do
+    it should "should return last name only" do
       expect (person.full_name).to eq "Smith"
     end
   end
