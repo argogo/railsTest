@@ -42,7 +42,7 @@ gem 'cancancan', '~> 1.10'
 gem 'will_paginate', '~> 3.1.1'
 # Comments pagination
 
-gem "rspec-rails", :group => [:test, :development]
+
 #will install rspec onto rails in test and development environment
 group :production do
   gem 'pg'
